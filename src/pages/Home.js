@@ -18,6 +18,7 @@ const FooterPrinc = React.lazy(() =>
 );
 
 const Home = () => {
+  console.log('hola nuevo server')
   return (
     <div>
       <BannerF />
