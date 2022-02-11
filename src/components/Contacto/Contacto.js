@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 
 const Contacto = (props) => {
+
+  const dia = new Date().getDate();
+  const mes = new Date().getMonth();
+  const año = new Date().getFullYear();
+
+  const hoy = dia + '/' + (mes + 1) + '/' + año;
+
   const initialStateValues = {
     name: "",
     email: "",
     phone: "",
     message: "",
+    fecha: hoy,
+    usado: false,
   };
 
   const [values, setValues] = useState(initialStateValues);
